@@ -9,3 +9,5 @@ function foobar(text) {
         </ul>
     `)
 }
+
+foobar('okten')

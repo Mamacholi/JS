@@ -11,3 +11,5 @@ function arrayMinValue(numbers) {
 
     return min;
 }
+
+console.log(arrayMinValue([88, 99, -111]));

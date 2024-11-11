@@ -7,3 +7,5 @@ function foobar(array) {
     }
     document.write(`</ul>`);
 }
+
+foobar([5, 'okten', true])

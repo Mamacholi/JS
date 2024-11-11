@@ -5,3 +5,5 @@ function foobar(users) {
         document.write(`<div>${user.id} ${user.name} ${user.age}</div>`);
     }
 }
+
+foobar([{id: 1, name: 'Vasja', age: 30}])

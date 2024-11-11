@@ -5,3 +5,5 @@ function foobar(array) {
         console.log(item)
     }
 }
+
+foobar([2, 3, 4, 5])
