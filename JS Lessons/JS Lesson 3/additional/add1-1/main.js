@@ -57,3 +57,10 @@ for (let i = 1; i < numbers.length; i += 2) {
 }
 
 // 5. перебрати циклом while та вивести  числа тільки парні  значення
+let q = 0;
+while (q < numbers) {
+    if (numbers[q] % 2 === 0) {
+        console.log(numbers[q]);
+    }
+    q++;
+}
