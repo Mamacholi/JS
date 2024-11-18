@@ -23,7 +23,7 @@ let users = [
     {id: 3, name: 'oleg', surname: 'ole', phone: '+300000222'},
     {id: 4, name: 'boris', surname: 'bor', phone: '+40000000004'},
     {id: 5, name: 'roman', surname: 'rom', phone: '+5000000055'},
-    {id: 6, name: 'sergiy', surname: 'serg', phone: '+600000066'},
+    {id: 6, name: 'sergiy', surname: 'ser', phone: '+600000066'},
     {id: 7, name: 'stepan', surname: 'step', phone: '+7000000077'},
     {id: 8, name: 'vetal', surname: 'vet', phone: '+8000000088'},
     {id: 9, name: 'dima', surname: 'dim', phone: '+900000099'},
