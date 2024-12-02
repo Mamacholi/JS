@@ -26,5 +26,4 @@ switch (dayNumber) {
         break;
     default:
         console.log("Будь ласка, введіть правильний номер дня від 1 до 7.");
-        break;
 }
