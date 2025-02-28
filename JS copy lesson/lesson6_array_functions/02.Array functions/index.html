@@ -50,6 +50,51 @@
     //
     // console.log(concat.includes(11));
     // console.log('hello okten'.includes('ok'));
+    let arr = [];
+    console.log(typeof arr); // виведе object
+    console.log(typeof {}); // виведе object
+    //щоб визначити точно чи є то масив, є спеціальна функція у класі Array яка називається isArray
+    console.log(Array.isArray(arr)); //виведе true
+    arr[arr.length] = 100; //додає в масив
+    console.log(arr);
+    console.log(arr.push('hello')); //додає в масив// виведе 2 - кількість елементів в масиві
+    console.log(arr);// виведе  [100, 'hello'], ми змінюємо сам масив
+    console.log(arr.pop());// вирізає останній елемент і повертає, видалений елемент можна кудись передати//виведе hello
+    console.log(arr); //виведе [100]
+    arr.unshift('jojo');
+    console.log(arr);//виведе ['jojo', 100]
+    console.log(arr.shift());// видаляеє перший елемент // виведе jojo
+    console.log(arr);// виведе [100]
+    console.log(arr.push(200));
+
+    //щоб з'єднати масив між собою
+    // let str = '';
+    // for (const arrElement of arr) {
+    //     str+=arrElement+';'
+    // }
+    // console.log(str);
+    //щоб замінити такий метод є join
+    let join = arr.join();//з'єднує елементи по замовчуванню комою, можна ('-') тире поставити і т д
+    console.log(join);// виведе 100,200
+
+    let nums = [11, 22, 33, 44];
+    let concat = arr.concat(nums);//з'єднує масиви, який хочемо щоб був перший тому і визиваємо функцію
+    console.log(concat);//виведе [100, 200, 11, 22, 33, 44]
+    console.log(arr);// виведе [100, 200]
+    console.log(concat.reverse());// [44, 33, 22, 11, 200, 100] писанини менше але навантажує більше, можна використати цикл в зворотньому
+    console.log(concat.slice(0, 4));// нарізає з 0 індекса по 4 не включно; slice — для створення копій або підмасивів; Створює новий масив, вирізаючи частину існуючого, без зміни оригінального масиву. array.slice(start, end);
+    //start — індекс початку вирізання (включно).end — індекс кінця вирізання (не включно). Якщо не вказано, вирізається до кінця масиву.Якщо індекси від’ємні, вони рахуються з кінця масиву.
+
+    let splice = concat.splice(0, 2, 'ddd', 'fff', 'ggg', 'hhh');//Видаляє або додає елементи безпосередньо в оригінальний масив. array.splice(start, deleteCount, ...items); start — індекс, з якого починається видалення/додавання. deleteCount — кількість елементів, які потрібно видалити. items (опціонально) — елементи, які додаються в масив.
+
+    console.log(splice);//[44, 33]
+    console.log(concat);//['ddd', 'fff', 'ggg', 'hhh', 22, 11, 200, 100]
+
+    console.log(concat.indexOf(11));//5 покаже під яким індексом є це число
+    concat.splice(concat.indexOf(11), 1);// виріже елемент під індексом 5, можна записати (5, 1)
+    console.log(concat);//['ddd', 'fff', 'ggg', 'hhh', 22, 200, 100]
+    console.log(concat.includes(22));//true перевіряє наявність елемента, так само працює і в string, бо то теж масив
+    //array js methods в гуглі весь перелік методів
 
 
 </script>

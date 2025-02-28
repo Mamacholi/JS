@@ -4,4 +4,3 @@ let str = ' dirty string   ';
 let string = str.trim();
 console.log(string);
 console.log(string.length);
-

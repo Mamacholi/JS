@@ -49,6 +49,10 @@ let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 // for (let i = 0; i < numbers.length; i++) {
 //     console.log(numbers[i]);
 // }
+// зворотній
+// for (let i = numbers.length - 1; i >= 0; i--) {
+//     console.log(numbers[i]);
+// }
 
 // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
 // let p = 1;
@@ -83,7 +87,7 @@ let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 // }
 
 // в зворотньму коли не знаємо кількість чисел у масиві
-// let startIndex = numbers.length % 2 === 0 ? numbers.length - 2 : numbers.length - 1;
+// let startIndex = numbers.length % 2 === 0 ? numbers.length - 1 : numbers.length - 2;
 //
 // for (let i = startIndex; i >= 0; i -= 2) {
 //     console.log(numbers[i]);
