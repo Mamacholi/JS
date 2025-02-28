@@ -32,7 +32,7 @@ console.log(numbArray[4]);
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
 
 // 1. перебрати його циклом while
-let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+// let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 // let i = 0;
 // while (i < numbers.length) {
 //     console.log(numbers[i]);
@@ -145,3 +145,11 @@ let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 // for (let i = numbers.length - 1; i >= 0; i--) {
 //     console.log(numbers[i])
 // }
+
+// #yHAwJOyiC
+// - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// for (let number of numbers) {
+//     console.log(number);
+// }
+
