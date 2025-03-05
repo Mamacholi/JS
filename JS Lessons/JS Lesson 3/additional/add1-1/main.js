@@ -297,10 +297,77 @@ let books = [
         genres: ["Біографія", "Мистецтво"]
     }
 ];
+// - знайти наібльшу книжку.
+// let largestBook = books[0];
+// for (let book of books) {
+//     if (book.pages > largestBook.pages) {
+//         largestBook = book;
+//     }
+// }
+// console.log('Найбільша книга:',largestBook)
 
-for (let book of books) {
-    if (book.pages > books[0].pages) {
-        books[0] = book;
+// - знайти книжку/ки з найбільшою кількістю жанрів
+// let maxGenresCount = books[0].genres.length;
+// for (let book of books) {
+//     if (book.genres.length > maxGenresCount) {
+//         maxGenresCount = book.genres.length;
+//     }
+// }
+// let bookWithMostGenres = [];
+// let indexGenres = 0;
+// for (let book of books) {
+//     if (book.genres.length === maxGenresCount) {
+//         bookWithMostGenres[indexGenres] = book;
+//         indexGenres++;
+//     }
+// }
+// console.log("Книга/и з найбільшою кількістю жанрів:", bookWithMostGenres);
+
+// - знайти книжку/ки з найдовшою назвою
+// let bookWithLongestTitle = books[0];
+// for (let book of books) {
+//     if (book.title.length > bookWithLongestTitle.title.length) {
+//         bookWithLongestTitle = book;
+//     }
+// }
+// console.log("Книга з найдовшою назвою:", bookWithLongestTitle);
+
+// - знайти книжку/ки з найдовшою назвою, коли може трапитися більше ніж одна книга
+// let booksTitleCount = books[0].title.length;
+// for (let book of books) {
+//     if (book.title.length > booksTitleCount) {
+//         booksTitleCount = book.title.length;
+//     }
+// }
+// let booksWithLongestTitle = [];
+// let indexTitle = 0;
+// for (let book of books) {
+//     if (book.title.length === booksTitleCount) {
+//         booksWithLongestTitle[indexTitle] = book;
+//         indexTitle++;
+//     }
+// }
+// console.log("Книга з найдовшою назвою:", booksWithLongestTitle);
+
+// - знайти книжку/ки які писали 2 автори
+// let booksWithTwoAuthors = [];
+// let indexTwoAuthors = 0;
+// for (let book of books) {
+//     if (book.authors.length === 2) {
+//         booksWithTwoAuthors[indexTwoAuthors] = book;
+//         indexTwoAuthors++;
+//     }
+// }
+// console.log("Книги з двома авторами:", booksWithTwoAuthors);
+
+
+// - знайти книжку/ки які писав 1 автор
+let booksWithOneAuthor = [];
+let indexOneAuthor = 0;
+for (let i = 0; i < books.length; i++) {
+    if (books[i].authors.length === 1) {
+        booksWithOneAuthor[indexOneAuthor] = books[i];
+        indexOneAuthor++;
     }
 }
-console.log('Найбільша книга:',books[0].title,'- сторінок:',books[0].pages)
+console.log("Книги з одним автором:", booksWithOneAuthor);
